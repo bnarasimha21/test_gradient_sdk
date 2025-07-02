@@ -8,6 +8,22 @@ This repository contains integration tests for the GradientAI SDK, covering sync
 - **Streaming API tests**: Validate streaming completions for supported models.
 - **Multi-model coverage**: Tests run across a variety of supported models.
 
+## Results
+
+### Model Parameters Test
+![Model Parameters Test](results/model_params.png)
+
+![Model Parameters Test List](results/model_params_test_list.png)
+
+### Streaming Test
+![Streaming Test](results/streaming.png)
+
+### Async Test
+![Async Test](results/async.png)
+
+### Main Example
+![Main Example](results/main.png)
+
 ## Setup
 
 ### 1. Clone the repository
@@ -27,6 +43,7 @@ pip install gradientai pytest pytest-asyncio python-dotenv
 ### 3. Set up environment variables
 Create a `.env` file in the project root with your GradientAI keys:
 ```
+GRADIENTAI_INFERENCE_KEY=your-inference-key-here
 GRADIENTAI_API_KEY=your-api-key-here
 ```
 
@@ -37,12 +54,12 @@ GRADIENTAI_API_KEY=your-api-key-here
 pytest test_integration_gradientai.py
 ```
 
-### Asynchronous Integration Test
+### Asynchronous Integration Tests
 ```bash
 pytest test_async_integration_gradientai.py
 ```
 
-### Streaming Integration Test
+### Streaming Integration Tests
 ```bash
 pytest test_streaming_integration_gradientai.py
 ```
