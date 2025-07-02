@@ -43,7 +43,6 @@ pip install gradientai pytest pytest-asyncio python-dotenv
 ### 3. Set up environment variables
 Create a `.env` file in the project root with your GradientAI keys:
 ```
-GRADIENTAI_INFERENCE_KEY=your-inference-key-here
 GRADIENTAI_API_KEY=your-api-key-here
 ```
 
